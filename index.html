@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Link fuentes -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <title>Portafolio</title>
+  </head>
+  <body>
+
+    <!-- Inicio sección Inicio -->
+    <section class="home" id="home">
+      <!-- Contiene un div con el nombre, la descripción y una etiqueta a para descargar la hv -->
+      <div class="content">
+        <h3>Fredy <span>Peña</span></h3>
+        <p>Junior FullStack Developer</p>
+        <a href="./Assets/CV.jpg" download class="btn"> Descargar CV <i class="fas fa-download" style="color: #cccccc; font-size: 15px; "></i></a>
+      </div>
+
+      <!-- Contiene un div para las etiquetas a con los logos de redes sociales -->
+
+      <div class="share">
+        <a href="https://www.linkedin.com/in/fredy-pena/" target="_blank" class="fab fa-linkedin"></a>
+        <a href="https://github.com/Fredytellez" target="_blank" class="fab fa-github"></a>
+        <a href="https://wa.me/573228615841" target="_blank" class="fab fa-whatsapp"></a>
+        
+        <!-- <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a> -->
+      </div>
+    </section>
+    <!-- Final sección Inicio -->
+
+    <!-- Sección Sobre mi -->
+
+    <section class="about" id="about">
+      <h1 class="heading"><span>Sobre</span> Mi</h1>
+
+      <!-- contiene un div con el nombre y una auto descripción y un boton <a> para contactar me -->
+      <div class="row">
+        <!-- SE AGREGARA CUANDO CUMPLA EXPERIENCIA -->
+
+        <!-- <div class="box-container">
+          <div class="box">
+            <h3>2++</h3>
+            <p>years of experience</p>
+          </div>
+          <div class="box">
+            <h3>3++</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div> -->
+
+        <div class="content">
+          <h3>Mi nombre es <span>Fredy Alberto Peña Tellez</span></h3>
+          <p>
+            Profesional con más de 3 años de experiencia en gestión administrativa y contable, actualmente enfocado en el desarrollo web. Poseo sólidos conocimientos en tecnologías frontend como HTML5, CSS3, JavaScript, React.js y Next.js, así como backend con Node.js. Mi experiencia administrativa y formación técnica en programación me permiten comprender tanto las necesidades empresariales como las soluciones tecnológicas para abordarlas efectivamente
+          </p>
+          <a href="#contact" class="btn">Contácteme</a>
+        </div>
+      </div>
+
+      <!-- Contiene barras de progreso con porcentaje de aprendizaje -->
+      <div class="logos-container">
+        <h1 class="heading">Conocimientos <span>en:</span></h1>
+        <div class="dropdown">
+          <label for="technology">Nivel de conocimiento</label>
+          <select name="technology" id="technology">
+          <option value="all">Todos</option>
+          <option value="basic">Basico</option>
+          <option value="medium">Intermedio</option>
+          <option value="advanced">Avanzado</option>
+          </select>
+        </div>
+        <div class="content-grid">
+          <div class="card-logo advanced"><img src="./Assets/icons/html.svg"><div><p>HTML</p></div> </div>  
+          <div class="card-logo advanced"><img src="./Assets/icons/css.svg"><div><p>CSS</p></div> </div>  
+          <div class="card-logo advanced" ><img src="./Assets/icons/javascript.svg"><div><p>Javascript</p></div> </div>  
+          <div class="card-logo medium"><img src="./Assets/icons/typescript.svg"><div><p>TypeScript</p></div> </div>  
+          <div class="card-logo advanced"><img src="./Assets/icons/react.svg"><div><p>ReactJS</p></div> </div>
+          <div class="card-logo advanced"><img src="./Assets/icons/vite.svg"><div><p>ViteJS</p></div> </div>  
+          <div class="card-logo advanced"><img src="./Assets/icons/nextjs.svg"><div><p>NextJS</p></div> </div>  
+          <div class="card-logo advanced"><img src="./Assets/icons/git.svg"><div><p>Git</p></div> </div>  
+          <div class="card-logo advanced"><img src="./Assets/icons/express.svg"><div><p>ExpressJS</p></div> </div>  
+          <div class="card-logo medium"><img src="./Assets/icons/nest.svg"><div><p>NestJS</p></div> </div>    
+          <div class="card-logo medium"><img src="./Assets/icons/mongo.svg"><div><p>MongoDB</p></div> </div>  
+          <div class="card-logo basic"><img src="./Assets/icons/postgres.svg"><div><p>PostgreSQL</p></div> </div>    
+          <div class="card-logo medium"><img src="./Assets/icons/prisma.svg"><div><p>Prisma</p></div> </div>    
+          <div class="card-logo basic"><img src="./Assets/icons/docker.svg"><div><p>Docker</p></div> </div>    
+          <div class="card-logo advanced"><img src="./Assets/icons/git.svg"><div><p>Git</p></div> </div>    
+        </div> 
+      </div>
+    </section>
+    <!-- Final sección Sobre Mi -->
+
+    <!-- Sección Servicios -->
+
+    <section class="services" id="services">
+      <h1 class="heading">Mis <span>servicios</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-paint-brush"></i>
+          <h3>diseño Web</h3>
+          <p>
+            Desarrollo de sitios web atractivos y funcionales, adaptados a tus necesidades y enfocados en mejorar la experiencia del usuario.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-mobile"></i>
+          <h3>diseño responsivo</h3>
+          <p>
+            Creación de diseños adaptables para que tu sitio web luzca y funcione de manera óptima en cualquier dispositivo.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-code"></i>
+          <h3>Desarrollo Web</h3>
+          <p>
+            Construcción de aplicaciones web dinámicas y escalables con tecnologías modernas para impulsar tu presencia en línea.
+          </p>
+        </div>
+        <div class="box">
+          <img src="./Assets/icons/api.svg" alt="">
+          <h3>Creación de APIs</h3>
+          <p>
+            Diseño e implementación de APIs seguras y escalables para conectar aplicaciones y optimizar la comunicación entre sistemas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Final sección servicios -->
+
+    <!-- Inicio sección portafolio-proyectos -->
+
+    <section class="portfolio" id="portfolio">
+      <h1 class="heading">mis <span>proyectos</span></h1>
+      <div class="box-container">
+        <a href="https://github.com/Fredytellez/Game-Score-Manager-v1.0" target="_blank">
+          <div class="box">
+            <img src="./Assets/projets-images/Game-Score-Manager.png" alt="" />
+            <div class="content">
+              <h3>CRUD-REACT-NODE-EXPRESS</h3>
+              <div class="use-technologies">
+                <p>NestJS</p>
+                <p>RTK Query</p>
+                <p>NestJs</p>
+                <p>Prisma</p>
+                <p>PostreSQL</p>
+                <p>Docker</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/Fredytellez/CRUD-REACT-NODE-EXPRESS" target="_blank">
+          <div class="box">
+            <img src="./Assets/projets-images/crud-react-node-express.png" alt="" />
+            <div class="content">
+              <h3>CRUD-REACT-NODE-EXPRESS</h3>
+              <div class="use-technologies">
+                <p>ReactJS</p>
+                <p>NodeJS</p>
+                <p>ExpressJS</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/Fredytellez/CRUD-API-NEXTJS" target="_blank">
+          <div class="box">
+            <img src="./Assets/projets-images/crud-api-next.png" alt="" />
+            <div class="content">
+              <h3>CRUD-API-NEXTJS</h3>
+              <div class="use-technologies">
+                <p>NextJS</p>
+                <p>NodeJS</p>
+                <p>TypeScript</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/Fredytellez/Node-Login-Auth" target="_blank">
+          <div class="box">
+            <img src="./Assets/projets-images/Node-Login-Auth.png" alt="" />
+            <div class="content">
+              <h3>Node-Login-Auth</h3>
+              <div class="use-technologies">
+                <p>Node.js</p>
+                <p>Db-Local</p>
+                <p>JWT</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Final sección proyectos-portafolio -->
+
+    <!-- section contact me start -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading">contactame</span></h1>
+      <div class="contact-data">
+        <p><span>Telefono:</span> +57 3228615841</p>
+        <p><span>Correo:</span> Tredy-94@outlook.com</p>
+      </div>
+
+      <form action="form">
+        <input type="text" placeholder="Nombre" class="box" required />
+        <input type="email" placeholder="Email" class="box" required />
+        <input type="text" placeholder="Asunto" class="box" required />
+        <textarea
+          name
+          class="box"
+          placeholder="Mensaje"
+          cols="20"
+          rows="5"
+          required
+        ></textarea>
+        <input type="submit" value="envía solicitud" class="btn" />
+      </form>
+      <a href="/" class="arrow-up"><i class="fas fa-angle-up fa-xs"></i></a>
+    </section>
+
+    <!-- final section contact me  -->
+
+    <!-- Script código -->
+    <script src="code.js"></script>
+  </body>
+</html>
