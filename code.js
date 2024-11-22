@@ -41,6 +41,7 @@ document.getElementById('form')
     .then(() => {
       btn.value = 'envía solicitud';
       alert('Tu notificación fue enviada!');
+      form.reset();
     }, (err) => {
       btn.value = 'envía solicitud';
       alert(JSON.stringify(err));
