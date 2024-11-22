@@ -212,19 +212,19 @@
         <p><span>Correo:</span> Tredy-94@outlook.com</p>
       </div>
 
-      <form action="form">
-        <input type="text" placeholder="Nombre" class="box" required />
-        <input type="email" placeholder="Email" class="box" required />
-        <input type="text" placeholder="Asunto" class="box" required />
+      <form action="form" id="form">
+        <input type="text" placeholder="Nombre" class="box" required name="from_name" id="from_name"/>
+        <input type="email" placeholder="Email" class="box" required name="email" id="email"/>
+        <input type="text" placeholder="Asunto" class="box" required name="subject" id="subject"/>
         <textarea
-          name
           class="box"
           placeholder="Mensaje"
           cols="20"
           rows="5"
           required
+          name="message" id="message"
         ></textarea>
-        <input type="submit" value="envía solicitud" class="btn" />
+        <input type="submit" value="envía solicitud" class="btn" id="btn" value="Send Email" />
       </form>
       <a href="#home" class="arrow-up"><i class="fas fa-angle-up fa-xs"></i></a>
     </section>
@@ -233,5 +233,12 @@
 
     <!-- Script código -->
     <script src="code.js"></script>
+
+    <script type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('DIbMdrZJx28eSnY8C')
+    </script>
   </body>
 </html>

@@ -24,46 +24,25 @@ select.addEventListener("change", (e) => {
   });
 });
 
-/* 
-let menu = document.querySelector("#menu-btn");
-let header = document.querySelector(".header")
+/* emailjs notifications */
 
-menu.onclick = () => {
-  menu.classList.toggle("fa-times")
-  header.classList.toggle("active")
-}
- */
-/* Ocultar menu */
+const btn = document.getElementById('btn');
 
-/* document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll(".navbar a")
-  const header = document.querySelector(".header")
-  const menu = document.querySelector("#menu-btn");
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
+   btn.value = 'Enviando...';
 
-  menu.onclick = () => {
-    menu.classList.toggle("fa-times")
-    header.classList.toggle("active")
+   const serviceID = 'default_service';
+   const templateID = 'template_gz1by6x';
 
-    if (menu.classList.contains("fa-times")) {
-      header.classList.add("hidden")
-    } else {
-      document.classList.remove("hidden")
-    }
-  }
-
-}) */
-
-/* let themeToggler = document.querySelector("#theme-toggler")
-
-themeToggler.onclick = () => {
-  themeToggler.classList.toggle("fa-sun")
-
-  if (themeToggler.classList.contains("fa-sun")) {
-    document.body.classList.add("active")
-  }
-  else {
-    document.body.classList.remove("active")
-  }
-}
- */
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'envía solicitud';
+      alert('Tu notificación fue enviada!');
+    }, (err) => {
+      btn.value = 'envía solicitud';
+      alert(JSON.stringify(err));
+    });
+});
