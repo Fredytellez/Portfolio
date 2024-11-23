@@ -216,7 +216,9 @@ section {
 }
 
 .about .row .content h3 {
-  font-size: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 3rem;
   color: var(--black);
   line-height: 1.8;
 }
@@ -230,15 +232,16 @@ section {
   color: var(--light-color);
   line-height: 1.8;
   padding: 1rem 0;
+  margin-bottom: 4rem;
 }
 
-.about .row:nth-child(3) {
+/* .about .row:nth-child(3) {
   padding-top: 2rem;
-}
+} */
 
-.about .row .progress {
+/* .about .row .progress {
   flex: 1 1 40rem;
-}
+} */
 
 /* Estilos del dropdown */
 
