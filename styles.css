@@ -107,7 +107,7 @@ section {
   text-decoration: uppercase;
 }
 
-/* Ocultar menu  */
+
 .hidden {
   display: none !important;
 }
@@ -118,6 +118,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 .home .content h3 {
@@ -210,8 +211,12 @@ section {
 } */
 
 /* Estilos nombre y texto */
+/* .about {
+  position: absolute;
+} */
 
 .about .content {
+  display: block;
   flex: 1 1 40rem;
 }
 
@@ -491,6 +496,18 @@ section {
   color: var(--light-color);
   font-size: 5rem;
 }
+.arrow-down {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  
+}
+
+.arrow-down a {
+  display: block;
+  color: var(--light-color);
+  font-size: 5rem;
+}
 
 /* ----------- Media Queries ----------- */
 
@@ -539,7 +556,7 @@ section {
   }
 
   .about .row .content p {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   .contact form {
